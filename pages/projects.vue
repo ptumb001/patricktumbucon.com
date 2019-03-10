@@ -9,6 +9,8 @@
         v-bind:title="project.title"
         v-bind:image="project.image"
         v-bind:description="project.description"
+        v-bind:github="project.github"
+        v-bind:devpost="project.devpost"
       ></Project> 
 
     </div>
@@ -30,27 +32,35 @@ export default {
         {
           image: '/amplitude.gif',
           title: 'Amplitude',
-          description: 'Browse through your Spotify recommendations with a clean interface. Save encountered songs to your Amplist.'
+          description: 'Browse through your Spotify recommendations with a clean interface. Save encountered songs to your Amplist.',
+          github: 'https://github.com/ptumb001/amplitude',
+          devpost: 'https://devpost.com/software/amplitude'
         },
         {
           image: '/runner.gif',
           title: 'Runner',
-          description: 'A hardware implementation of the popular browser game Cuberunner. Dodge falling objects at increasing speed.'
+          description: 'A hardware implementation of the popular browser game Cuberunner. Dodge falling objects at increasing speed.',
+          github: 'https://github.com/ptumb001/runner'
         },
         {
           image: '/locus.png',
           title: 'Locus',
-          description: 'Find your perfect neighborhood by utilizing location analytics, points of interest, and area indices.'
+          description: 'Find your perfect neighborhood by utilizing location analytics, points of interest, and area indices.',
+          github: 'https://github.com/ptumb001/locus',
+          devpost: 'https://devpost.com/software/locus-7gm5wd'
         },
         {
           image: '/seefood.png',
           title: 'Seefood',
-          description: 'A nutrition tracker that uses computer vision and neural networks to identify what you\'re eating and provide nutritional information.'
+          description: 'A nutrition tracker that uses computer vision and neural networks to identify what you\'re eating and provide nutritional information.',
+          github: 'https://github.com/johnphamous/seefood',
+          devpost: 'https://www.hackerearth.com/challenges/hackathon/biohack/dashboard/ec470b9/submission/'
         },
         {
           image: '/sweetnectarvalley.png',
           title: 'Sweet Nectar Valley',
-          description: 'A virtual reality experience inspired by Stardew Valley. Chop down trees, plant crops, and interact with your farm animals.'
+          description: 'A virtual reality experience inspired by Stardew Valley. Chop down trees, plant crops, and interact with your farm animals.',
+          github: 'https://github.com/ptumb001/sweet-nectar-valley'
         }
       ]
     }

@@ -10,6 +10,16 @@
       <div class="content">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
+        <ul>
+          <li>
+            <a v-if="github"
+               v-bind:href="github">GitHub</a>
+          </li>
+          <li>
+            <a v-if="devpost"
+               v-bind:href="devpost">Devpost</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -22,7 +32,9 @@ export default {
   props: {
     image: String,
     title: String,
-    description: String
+    description: String,
+    github: String,
+    devpost: String
   },
   methods: {
     tilt: function() {
@@ -51,5 +63,9 @@ export default {
 
 .content {
   padding: 5%;
+}
+
+ul>li {
+  display: inline;
 }
 </style>
