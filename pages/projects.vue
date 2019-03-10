@@ -58,17 +58,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    tilt: function() {
-      const projects = document.getElementsByClassName('project');
-
-      Tilt.init(projects, {
-      });
-    }
-  },
-  mounted: function() {
-    this.tilt();
   }
 }
 </script>
