@@ -96,6 +96,9 @@ export default {
   components: {
     Animation
   },
+  props: {
+    darkMode: Boolean
+  },
   methods: {
     toggleDisplay: function() {
       let currBackground = document.getElementsByTagName("body")[0].style.backgroundColor;

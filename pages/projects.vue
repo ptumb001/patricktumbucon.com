@@ -4,10 +4,6 @@
     <div class="projects grid">
 
       <Project 
-        data-tilt
-        data-tilt-reverse="true"
-        data-tilt-scale="1.1"
-
         v-for="project in projects"
         v-bind:key="project.title"
         v-bind:title="project.title"
