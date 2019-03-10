@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-personal-2",
+  "version": "1.0.0",
+  "description": "My scrumtrulescent Nuxt.js project",
+  "author": "Patrick Tumbucon",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "animejs": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
