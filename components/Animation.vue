@@ -41,20 +41,6 @@ export default {
       ],
       easing: "spring(1, 80, 10, 0)"
      });
-
-     anime({
-     targets: "body",
-     backgroundColor: ["#000", "#fff"],
-     duration: 2000,
-     easing: "easeOutQuart"
-     });
-
-     anime({
-     targets: "h1, h2, p, li>a>i",
-     color: ["#fff", "#000"],
-     duration: 2000,
-     easing: "easeOutQuart"
-     });
     } 
   },
   mounted() {

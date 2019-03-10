@@ -1,8 +1,10 @@
 <template>
   <div class="project"
        data-tilt
+       data-tilt-glare 
+       data-tilt-max-glare="0.2"
        data-tilt-reverse="true"
-       data-tilt-scale="1.1">
+       data-tilt-scale="1.25">
     <div class="card">
       <img class="card-img" 
            v-bind:src="image" 
@@ -53,6 +55,8 @@ export default {
   border: 1px solid black;
   width: 75%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 .card-img {
@@ -65,7 +69,16 @@ export default {
   padding: 5%;
 }
 
+h2, p, ul>li {
+  transform: translateZ(100px);
+}
+
+ul {
+  padding-left: 0;
+}
+
 ul>li {
   display: inline;
+  margin-left: 0;
 }
 </style>

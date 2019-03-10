@@ -51,7 +51,7 @@
       </p>
       <p>
         Previously, I've increased search presence at
-        <a href="http:/esri.com">Esri</a>, professionally developed students at 
+        <a href="http://esri.com">Esri</a>, professionally developed students at 
         <a href="http://acmucr.org">ACM@UCR</a>, and organized multiple events at 
         <a href="http://citrushack.com">Citrus Hack</a>.
       </p>
@@ -101,6 +101,7 @@ export default {
   },
   methods: {
     toggleDisplay: function() {
+      this.$emit('toggleMode');
       let currBackground = document.getElementsByTagName("body")[0].style.backgroundColor;
       console.log(currBackground);
       let toggleText = document.getElementById("toggle");
