@@ -1,4 +1,4 @@
-# nuxt-personal-2
+# patricktumbucon.com
 
 > My scrumtrulescent Nuxt.js project
 
