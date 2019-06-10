@@ -81,4 +81,13 @@ ul>li {
   display: inline;
   margin-left: 0;
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px) {
+    .project {
+      width: 100%;
+    }
+
+}
 </style>

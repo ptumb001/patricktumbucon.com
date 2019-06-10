@@ -1,14 +1,13 @@
 <template>
- <div class="container">
+  <div class="container">
     <section>
       <div class="grid grid-hero">
 
-       <Animation /> 
+        <Animation /> 
 
         <div class="col hero-content">
           <h1>Patrick Tumbucon</h1>
           <p class="subtitle">Software Developer, Community Leader</p>
-          <p class="subtitle" id="toggle" v-on:click="toggleDisplay">Dark mode?</p>
           <ul>
             <li>
               <a href="https://github.com/ptumb001">
@@ -47,7 +46,7 @@
         I'm currently a senior computer engineering undergraduate at 
         <a href="http://ucr.edu">UC Riverside</a>. From there, I'll
         be heading to 
-        <a href="http://amazon.com">Amazon</a>. 
+        <a href="http://amazon.com">Amazon</a> in Seattle, Washington. 
       </p>
       <p>
         Previously, I've increased search presence at
@@ -71,11 +70,7 @@
     </section>
     
     <section>
-      <h2>Ramblings</h2>
-      <p>
-        I believe that the best software is fixated on the problem itself, rather than its competitors.
-        I'm passionate about working in the front end, but I also enjoy working on complex back end systems.
-      </p>
+      <h2>More stuff about me</h2>
       <p>
         In my free time, I enjoy relaxing at coffee shops, climbing rocks, playing strategy games (and Smash Bros), and attending music festivals.
       </p>
@@ -89,21 +84,17 @@
 </template>
 
 <script>
-import Animation from '~/components/Animation'
+import Animation from '@/components/Animation'
 import anime from 'animejs'
 
 export default {
   components: {
     Animation
   },
-  props: {
-    darkMode: Boolean
-  },
   methods: {
     toggleDisplay: function() {
       this.$emit('toggleMode');
       let currBackground = document.getElementsByTagName("body")[0].style.backgroundColor;
-      console.log(currBackground);
       let toggleText = document.getElementById("toggle");
       
       // Currently light, turn dark
@@ -135,7 +126,10 @@ export default {
               duration: 300, 
             },
             {
-              delay: anime.stagger(100),
+              delay: anime.stagger(200, {
+                grid: [5, 5],
+                from: 'center'
+              }),
               skew: "0",
               scale: 0.75,
               background: "linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%)",
@@ -176,7 +170,10 @@ export default {
               duration: 300 
             },
             {
-              delay: anime.stagger(100),
+              delay: anime.stagger(150, {
+                  grid: [5, 5],
+                  from: 'center'
+              }),
               skew: "0",
               scale: 0.75,
               background: "linear-gradient(-45deg, rgba(250,116,47,1) 22%, rgba(255,51,125,1) 100%)",
@@ -198,7 +195,8 @@ export default {
 }
 
 .grid-anim {
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;  
 }
 
 .col {
@@ -250,25 +248,13 @@ section {
 }
 
 .square {
-  width: 50px;
-  height: 50px;
+  width: 15px;
+  height: 15px;
 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
-  border-radius: 10%;
+  border-radius: 50%;
 
-}
-
-.sq-2 {
-  transform: rotate(90);
-}
-
-.sq-3 {
-  transform: rotate(-90);
-}
-
-.sq-4 {
-  transform: rotate(180);
 }
 
 a {
@@ -301,7 +287,7 @@ p {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  { 
     .container {
       padding: 0;
     }
@@ -314,5 +300,8 @@ p {
       text-align: center;
     }
 
+    .grid-anim {
+      margin: 10%;
+    }
 }
 </style>

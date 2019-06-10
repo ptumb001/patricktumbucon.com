@@ -2,7 +2,7 @@
   <div>
     <Header />
     <nuxt v-on:toggleMode="this.darkMode=!this.darkMode"
-          v-bind:darkMode="this.darkMode"/>
+          v-on:darkMode="this.darkMode"/>
   </div>
 </template>
 
@@ -14,32 +14,9 @@ export default {
     Header
   },
   data: function() {
-   return {
-      darkMode: false
+    return {
     }
-  },
-  computed: {
-    toggleMode: function() {
-      console.log('toggleMode function called');
-      let els = document.querySelectorAll('h1, h2, p, li>a>i');
-      if (this.darkMode) {
-        for (let i = 0; i < els.length; i++) {
-          els[i].classList.remove('light-bg');
-          els[i].classList.remove('dark-text');
-          els[i].classList.add('dark-bg');
-          els[i].classList.add('light-text');
-        }
-      }
-      else {
-        for (let i = 0; i < els.length; i++) {
-          els[i].classList.remove('dark-bg');
-          els[i].classList.remove('light-text');
-          els[i].classList.add('light-bg');
-          els[i].classList.add('dark-text');
-        }
-      }
-    }
-  }  
+  }
 }
 </script>
 
@@ -52,6 +29,10 @@ export default {
 
 .container {
   padding: 0 35%;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .grid {

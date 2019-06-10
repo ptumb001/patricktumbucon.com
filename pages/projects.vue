@@ -69,10 +69,6 @@ export default {
 </script>
 
 <style>
-h1 {
-  text-align: center;
-}
-
 .projects {
   padding: 5% 15%;
   padding-bottom: 25%;
@@ -80,5 +76,21 @@ h1 {
   grid-row-gap: 15%;
   justify-items: center;
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px) {
+    h1 {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+      grid-row-gap: 5%;
+    }
+}
+
+
   
 </style>
