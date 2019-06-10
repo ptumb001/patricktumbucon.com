@@ -3,6 +3,8 @@
 
 > My personal website
 
+<img src="static/Screenshot_2019-06-09 Patrick Tumbucon.png" width=1000/>
+
 A Nuxt.js application running on Netlify servers. Also some stuff about me.
 
 ## Build Setup
