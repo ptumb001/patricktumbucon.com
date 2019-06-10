@@ -38,5 +38,11 @@ export default {
 </script>
 
 <style scoped>
-  
+  @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 667px) {
+      p {
+        font-size: 14px;
+      }
+    }
 </style>

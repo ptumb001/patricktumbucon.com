@@ -68,13 +68,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .projects {
   padding: 5% 15%;
   padding-bottom: 25%;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 15%;
   justify-items: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 @media only screen

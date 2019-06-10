@@ -206,8 +206,8 @@ section {
 }
 
 .square {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
@@ -229,7 +229,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 2% 0;
 }
 
@@ -239,11 +239,15 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .grid-hero {
-  margin-top: 50%;
+  margin-top: 25%;
+}
+
+.container {
+  padding: 0 25%;
 }
 
 @media only screen 
@@ -264,6 +268,22 @@ p {
 
     .grid-anim {
       margin: 10%;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p.subtitle {
+      font-size: 20px;
+    }
+
+    li>a>i {
+      font-size: 20px;
     }
 }
 </style>
