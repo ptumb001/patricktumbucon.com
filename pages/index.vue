@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <section>
-      <div class="grid grid-hero">
+    <div class="grid grid-hero">
 
         <Animation /> 
 
@@ -37,49 +36,8 @@
           </ul>
         </div>
       </div>
-      
-    </section>
             
-    <section>
-      <h2>What I've been up to</h2>
-      <p>
-        I'm currently a senior computer engineering undergraduate at 
-        <a href="http://ucr.edu">UC Riverside</a>. From there, I'll
-        be heading to 
-        <a href="http://amazon.com">Amazon</a> in Seattle, Washington. 
-      </p>
-      <p>
-        Previously, I've increased search presence at
-        <a href="http://esri.com">Esri</a>, professionally developed students at 
-        <a href="http://acmucr.org">ACM@UCR</a>, and organized multiple events at 
-        <a href="http://citrushack.com">Citrus Hack</a>.
-      </p>
-    </section>
     
-    <section>
-      <h2>Some things I've made</h2>
-
-      <p>
-        <a href="https://github.com/ptumb001/locus">Locus</a>,
-        <a href="https://github.com/JohnPhamous/seefood">SeeFood</a>, and
-        <a href="https://github.com/ptumb001/amplitude">Amplitude</a>
-        are a few projects I've worked on. I also design and develop websites
-        for student organizations. You can find more on 
-        <a href="https://github.com/ptumb001">GitHub</a>.
-      </p>
-    </section>
-    
-    <section>
-      <h2>More stuff about me</h2>
-      <p>
-        In my free time, I enjoy relaxing at coffee shops, climbing rocks, playing strategy games (and Smash Bros), and attending music festivals.
-      </p>
-      <p>
-        If you'd like to schedule a meeting with me (whether virtual or in-person), feel free to do so 
-        <a href="https://www.meetingbird.com/m/BJqmXcBmQ">here</a>.
-      </p>
-    </section>
-
   </div> 
 </template>
 
@@ -282,6 +240,10 @@ h2 {
 
 p {
   font-size: 14px;
+}
+
+.grid-hero {
+  margin-top: 50%;
 }
 
 @media only screen 
