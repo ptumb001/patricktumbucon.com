@@ -1,6 +1,7 @@
 <template>
   <div class="grid-header container">
     <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link to="about">About</nuxt-link>
     <nuxt-link to="projects">Projects</nuxt-link>
   </div>
 </template>
@@ -16,7 +17,7 @@ export default {
 <style>
 .grid-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 a {

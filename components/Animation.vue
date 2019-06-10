@@ -1,5 +1,5 @@
 <template>
-  <div class="col animation grid grid-anim" @mouseover="toggleRadius">
+  <div class="col animation grid grid-anim" @mouseover="toggleRadius" @click="toggleRadius">
   <div class="square yellow-red"></div>
   <div class="square yellow-red"></div>
   <div class="square yellow-red"></div>

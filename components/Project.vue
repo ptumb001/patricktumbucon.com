@@ -89,5 +89,9 @@ ul>li {
       width: 100%;
     }
 
+    p {
+      font-size: 14px !important;
+    }
+
 }
 </style>
