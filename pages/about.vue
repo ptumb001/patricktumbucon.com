@@ -4,10 +4,8 @@
     <section>
       <h2>What I've been up to</h2>
       <p>
-        I'm currently a senior computer engineering undergraduate at 
-        <a href="http://ucr.edu">UC Riverside</a>. From there, I'll
-        be heading to 
-        <a href="http://amazon.com">Amazon</a> in Seattle, Washington. 
+        I'm a Software Development Engineer at <a href="http://amazon.com">Amazon</a>, based in Seattle, Washington. I graduated from  
+        <a href="http://ucr.edu">UC Riverside</a> with a BS in Computer Engineering.
       </p>
       <p>
         Previously, I've increased search presence at
