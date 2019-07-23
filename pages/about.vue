@@ -4,7 +4,8 @@
     <section>
       <h2>What I've been up to</h2>
       <p>
-        I'm a Software Development Engineer at <a href="http://amazon.com">Amazon</a>, based in Seattle, Washington. I graduated from  
+        I'm a Software Development Engineer at <a href="http://amazon.com">Amazon</a>, based in Seattle, Washington. I work in  
+        <a href="https://amazon.jobs/en/teams/transaction-risk-management-systems">TRMS</a>, where we utilize machine learning to prevent seller fraud before it can happen. I graduated from  
         <a href="http://ucr.edu">UC Riverside</a> with a BS in Computer Engineering.
       </p>
       <p>
