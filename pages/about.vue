@@ -27,6 +27,18 @@
       </p>
     </section>
 
+    <section>
+      <h2>What I do in my free time</h2>
+      <p>
+        I enjoy relaxing at coffee shops, climbing rocks, playing strategy games (and Smash Bros), and attending music festivals.
+      </p>
+      <p>
+        If you'd like to schedule a meeting with me (whether virtual or in-person), feel free to do so 
+        <a href="https://www.meetingbird.com/m/BJqmXcBmQ">here</a>.
+      </p>
+    </section>
+
+
   </div>
 </template>
 
