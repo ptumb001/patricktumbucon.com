@@ -21,6 +21,7 @@
     "vanilla-tilt": "^1.7.0"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.2.2",
     "nodemon": "^1.19.4"
   }
 }

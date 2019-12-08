@@ -57,6 +57,12 @@ module.exports = {
     ]
   },
 
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-110333639-2'
+    }]
+  ],
+
   /*
   ** Build configuration
   */
