@@ -89,7 +89,7 @@ ul>li {
       width: 100%;
     }
 
-    p {
+    p, li {
       font-size: 14px !important;
     }
 

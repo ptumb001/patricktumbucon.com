@@ -78,6 +78,10 @@
     display: list-item;
   }
 
+  .content >>> ul > li {
+    margin-left: 3%;
+  }
+
   .content >>> code {
     font-family: 'Ubuntu Mono', monospace;
   }
@@ -95,6 +99,10 @@
     .blog-post {
       padding: 0 12%;
     } 
+
+    .content >>> blockquote {
+      margin: 0;
+    }
   }
 
 

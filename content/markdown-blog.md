@@ -22,11 +22,9 @@ I used to develop websites using just HTML and CSS, with a few JavaScript animat
 
 I'm definitely not at the level where I push the limits of what Nuxt.js can do, but I find it easy to work with for my personal website.
 
+<img src="https://i.imgur.com/2GOQH1K.gif" width="100%">
 
 
-
-
-![](https://i.imgur.com/2GOQH1K.gif)
 
 Isn't it pretty?
 
@@ -139,7 +137,7 @@ module.exports = {
 
 > **Fun fact**: I was stuck for an hour because I accidently put `config.modules.rules` instead of `config.module.rules` and I'd get the error "Cannot read property 'modules' in undefined". 
 >
-> That was real fun figuring out.
+> That was real fun to figure out.
 
 Since I specified that there will be a `content` directory, I should probably create it.
 
@@ -149,7 +147,7 @@ mkdir content
 
 In my Markdown editor, I'm saving my Markdown file inside of the `content` directory. 
 
-```
+```markdown
 content/
 --| markdown-blog.md <-- Here it is!
 ```
@@ -162,7 +160,7 @@ Since I'm going to have a bunch of posts (hopefully lmao), it wouldn't make sens
 
 For example, if I have 3 posts with file names as "markdown-blog.md", "coffee-week-5.md", and "my-plant-died.md", then I would want the routes to look like this:
 
-```
+```markdown
 https://patricktumbucon.com/posts/markdown-blog
 https://patricktumbucon.com/posts/coffee-week-5
 https://patricktumbucon.com/posts/my-plant-died
@@ -176,7 +174,7 @@ mkdir pages/posts && touch pages/posts/_slug.vue
 
 The `pages` directory will now look like this:
 
-```
+```markdown
 pages/
 --| index.vue
 --| projects.vue
@@ -236,9 +234,9 @@ For example, let's say I navigated to `https://patricktumbucon.com/posts/markdow
 
 But what if I navigated to `https://patricktumbucon.com/posts/LMAO-THIS-POST-DOESNT-EXIST`? 
 
-Well first of all, why would I do that. But my code would catch the error (since the `import` statement would fail), log the error, and you would be greeted with an error page.
+Well first of all, why would I do that. My code would catch the error (since the `import` statement would fail), log the error, and you would be greeted with an error page.
 
-<img src="https://i.imgur.com/Q5gd43P.png" width=750>
+<img src="https://i.imgur.com/Q5gd43P.png" width="100%">
 
 
 
@@ -248,7 +246,7 @@ After a little bit of CSS magic, we end up with this page you're reading right n
 
 Cool, now I'm able to write posts in Markdown with YAML FM attributes without having to worry if the styling breaks on my website. But I still need a page that displays all my posts! Sure, you can find a post if you have the direct link. But no one would be able to find ALL my posts. 
 
-I need to create a page with all my posts.
+I need to create a page containing all of my posts.
 
 Fortunately, this shouldn't be too difficult. I already know how to load my Markdown files from the `content` directory, so there's not really anything new going on.
 
@@ -260,7 +258,7 @@ touch pages/posts/index.vue
 
 Now, the structure will look like this:
 
-```
+```markdown
 pages/
 --| index.vue
 --| projects.vue
