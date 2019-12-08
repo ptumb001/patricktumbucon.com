@@ -1,7 +1,7 @@
 ---
 title: Adding Support for Markdown-style Blog Posts in a Nuxt.js project
 date: December 8, 2019
-permalink: markdown-blog
+permalink: /posts/markdown-blog
 ---
 
 At my current job, I maintain and build on a machine learning platform to support our machine learning scientists. This involves a lot of OOP and functional programming (Python, Scala, etc) which I really enjoy working with. But I do miss working on front-end projects in my free time, one of those being my personal website. 
