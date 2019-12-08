@@ -21,10 +21,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu+Mono|Ubuntu');
 
 p, h1, h2, h3, h4, h5, a, ul, li {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   letter-spacing: 1px;
 }
 

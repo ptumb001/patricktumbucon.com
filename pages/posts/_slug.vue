@@ -46,10 +46,6 @@
     color: #6a737d;
   }
 
-  .content {
-    margin: 0;
-  }
-
   .content >>> h1 {
     font-size: 2.5em;
   }
@@ -97,7 +93,7 @@
   and (max-device-width: 667px) 
   { 
     .blog-post {
-      padding: 0 12%;
+      padding: 0 6%;
     } 
 
     .content >>> blockquote {

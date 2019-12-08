@@ -9,7 +9,7 @@
       <img class="card-img" 
            v-bind:src="image" 
            v-bind:alt="title">
-      <div class="content">
+      <div class="proj-content">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
         <ul>
@@ -65,7 +65,7 @@ export default {
   margin: 0 auto;
 }
 
-.content {
+.proj-content {
   padding: 5%;
 }
 
@@ -90,7 +90,7 @@ ul>li {
     }
 
     p, li {
-      font-size: 14px !important;
+      font-size: 16px !important;
     }
 
 }

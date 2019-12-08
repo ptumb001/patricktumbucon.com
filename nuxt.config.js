@@ -1,11 +1,6 @@
 const pkg = require('./package')
 
 import path from "path"
-import glob from "glob"
-
-var dynamicRoutes = getDynamicPaths({
-  '/posts': 'posts/*.md'
-});
 
 module.exports = {
   mode: 'universal',
@@ -78,15 +73,4 @@ module.exports = {
       });
     }
   }
-}
-
-function getDynamicPaths(urlFilepathTable) {
-  return [].concat(
-    ...Object.keys(urlFilepathTable).map(url => {
-      var filepathGlob = urlFilepathTable[url];
-      return glob
-        .sync(filepathGlob, { cwd: 'content' })
-        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
-    })
-  );
 }
