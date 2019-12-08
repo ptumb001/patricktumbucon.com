@@ -75,7 +75,7 @@
   }
 
   .content >>> li {
-    display: default;
+    display: list-item;
   }
 
   .content >>> code {
