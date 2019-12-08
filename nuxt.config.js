@@ -1,5 +1,6 @@
 const pkg = require('./package')
 
+import path from "path"
 
 module.exports = {
   mode: 'universal',
@@ -35,6 +36,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/prism'
   ],
 
   /*
@@ -51,8 +53,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      
+    extend (config) {
+      config.module.rules.push({
+        test:  /\.md$/,
+        include: path.resolve(__dirname, "content"),
+        loader: 'frontmatter-markdown-loader'
+      });
     }
   }
 }

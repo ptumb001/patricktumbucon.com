@@ -1,43 +1,40 @@
 <template>
   <div class="container">
     <div class="grid grid-hero">
+      <Animation /> 
 
-        <Animation /> 
-
-        <div class="col hero-content">
-          <h1>Patrick Tumbucon</h1>
-          <p class="subtitle">Software Developer, Community Leader</p>
-          <ul>
-            <li>
-              <a href="https://github.com/ptumb001">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://codepen.io/worldwithpatrick">
-                <i class="fab fa-codepen"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/PTumbucon">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/patricktumbucon">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="PatrickTumbuconResume.pdf">
-                <i class="far fa-file-alt"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="col hero-content">
+        <h1>Patrick Tumbucon</h1>
+        <p class="subtitle">Software Developer, Petter of Shibas</p>
+        <ul class="icon-list">
+          <li class="icon-list-item">
+            <a href="https://github.com/ptumb001">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="https://codepen.io/worldwithpatrick">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="https://twitter.com/PTumbucon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="https://linkedin.com/in/patricktumbucon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="~assets/PatrickTumbuconResume.pdf">
+              <i class="far fa-file-alt"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-            
-    
+    </div>
   </div> 
 </template>
 
@@ -165,11 +162,11 @@ export default {
   padding-left: 5%;
 }
 
-ul {
+ul.icon-list {
   list-style-type: none;
 }
 
-li {
+li.icon-list-item {
   display: inline;
   margin: 0 5%;
 }
