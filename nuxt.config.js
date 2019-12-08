@@ -52,7 +52,9 @@ module.exports = {
   ],
 
   generate: {
-    routes: dynamicRoutes
+    routes: [
+      '/posts/markdown-blog'
+    ]
   },
 
   /*

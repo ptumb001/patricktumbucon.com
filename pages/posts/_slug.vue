@@ -88,5 +88,14 @@
     padding-left: 2em;
   }
 
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  { 
+    .blog-post {
+      padding: 0 12%;
+    } 
+  }
+
 
 </style>

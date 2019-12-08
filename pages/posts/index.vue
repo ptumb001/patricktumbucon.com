@@ -33,56 +33,5 @@
     padding: 0 25%;
     margin-top: 5%;
   }
-  .blog-post {
-    padding: 0 25%;
-    margin: 0 auto;
-  }
-
-  .post-title {
-    margin-top: 5%;
-  }
-
-  .post-date {
-    color: #6a737d;
-  }
-
-  .content >>> h1 {
-    font-size: 2.5em;
-  }
-
-  .content >>> h2 {
-    font-size: 2.25em;
-  }
-  
-  .content >>> h3 {
-    font-size: 2em;
-  }
-  
-  .content >>> h4 {
-    font-size: 1.5em;
-  }
-  .content >>> p, .content >>> li {
-    font-size: 20px;
-    letter-spacing: 1px;
-  }
-
-  .content >>> ul {
-    list-style-type: '- ';
-  }
-
-  .content >>> li {
-    display: default;
-  }
-
-  .content >>> code {
-    font-family: 'Ubuntu Mono', monospace;
-  }
-
-  .content >>> blockquote {
-    border-left: 4px solid #dfe2e5;
-    color: #6a737d;
-    padding-left: 2em;
-  }
-
 
 </style>

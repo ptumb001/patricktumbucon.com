@@ -22,6 +22,10 @@ I used to develop websites using just HTML and CSS, with a few JavaScript animat
 
 I'm definitely not at the level where I push the limits of what Nuxt.js can do, but I find it easy to work with for my personal website.
 
+
+
+
+
 ![](https://i.imgur.com/2GOQH1K.gif)
 
 Isn't it pretty?
