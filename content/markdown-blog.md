@@ -30,7 +30,7 @@ I'm definitely not at the level where I push the limits of what Nuxt.js can do, 
 
 Isn't it pretty?
 
-I've been a big fan of writing in Markdown recently. Markdown is a simple markup language with syntax that makes specifying rich text like **bold**, [links](https://vignette.wikia.nocookie.net/zelda/images/b/b1/Link_%28SSB_3DS_%26_Wii_U%29.png/revision/latest?cb=20130611202433), and `inline code` super easy. I use it mainly to write technical and design documentation at work. I write Markdown in an editor called [Typhora](https://www.typora.io/), which compiles markdown in a WYSIWYG fashion. I use this article from [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/) as a reference if I ever forget Markdown syntax.
+I've been a big fan of writing in Markdown recently. Markdown is a simple markup language with syntax that makes specifying rich text like **bold**, [links](https://vignette.wikia.nocookie.net/zelda/images/b/b1/Link_%28SSB_3DS_%26_Wii_U%29.png/revision/latest?cb=20130611202433), and `inline code` super easy. I use it mainly to write technical and design documentation at work. I write Markdown in an editor called [Typora](https://www.typora.io/), which compiles markdown in a WYSIWYG fashion. I use this article from [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/) as a reference if I ever forget Markdown syntax.
 
 
 
