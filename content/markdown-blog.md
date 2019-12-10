@@ -4,9 +4,11 @@ date: December 8, 2019
 permalink: /posts/markdown-blog
 ---
 
-At my current job, I maintain and build on a machine learning platform to support our machine learning scientists. This involves a lot of OOP and functional programming (Python, Scala, etc) which I really enjoy working with. But I do miss working on front-end projects in my free time, one of those being my personal website. 
+At my current job, I maintain and build on a machine learning platform to support our machine learning scientists. This involves a lot of OOP and functional programming which I really enjoy working with. But I do miss working on front-end projects in my free time, one of those being my personal website. 
 
 At the same time, I've always thought about starting a blog about dumb stuff I want to write about to a vague audience. Topics like coffee I'm currently drinking or books I enjoyed reading. My personal website is the perfect platform for this. So I'm going to document the process of implementing a blog on my website and see how this goes.
+
+I found [this tutorial on Markdown-powered blogs in Nuxt.js](https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt-js-in-2019/) by [@kregenrek](https://twitter.com/kregenrek) and used this as a reference when adding this functionality to my site.
 
 ## Background
 
@@ -29,6 +31,8 @@ I'm definitely not at the level where I push the limits of what Nuxt.js can do, 
 Isn't it pretty?
 
 I've been a big fan of writing in Markdown recently. Markdown is a simple markup language with syntax that makes specifying rich text like **bold**, [links](https://vignette.wikia.nocookie.net/zelda/images/b/b1/Link_%28SSB_3DS_%26_Wii_U%29.png/revision/latest?cb=20130611202433), and `inline code` super easy. I use it mainly to write technical and design documentation at work. I write Markdown in an editor called [Typhora](https://www.typora.io/), which compiles markdown in a WYSIWYG fashion. I use this article from [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/) as a reference if I ever forget Markdown syntax.
+
+
 
 ## Implementing the Blog
 
@@ -345,6 +349,44 @@ a {
 ```
 
 I just added a new `<nuxt-link>` element and changed `grid-template-columns` to support 4 items in a single row.
+
+### Generating Dynamic Routes for your Post
+
+I host my site on Netlify, which runs the necessary build commands and manages my deployments to my personal website. I tried deploying my changes as-is, since everything worked on my computer. But I tried messing around with the header links in production and was greeted with this error page when I tried accessing my post:
+
+<img src="https://i.imgur.com/MNlai50.png" width="100%">
+
+
+
+*What went wrong?*
+
+Turns out that I needed to specify in my Nuxt.js config the dynamic route paths to generate. Nuxt.js automatically handles routing for pages that are unique, like my Home page and Projects page. Since there are going to be unique URL's for every host, they need to be explicitly routed.
+
+
+
+```javascript
+module.exports = {
+    
+    ...
+    
+  generate: {
+    routes: [
+      '/posts/markdown-blog'
+    ]
+  },
+   
+    ...
+    
+}
+
+
+```
+
+
+
+For now, I'm going to just hardcode the array for the only link I need right now.
+
+
 
 ## What's Next?
 
