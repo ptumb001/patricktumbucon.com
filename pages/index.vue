@@ -162,6 +162,10 @@ export default {
   padding-left: 5%;
 }
 
+a {
+  padding-top: 0;
+}
+
 ul.icon-list {
   list-style-type: none;
 }

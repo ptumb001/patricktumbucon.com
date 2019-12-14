@@ -34,4 +34,11 @@
     margin-top: 5%;
   }
 
+  li {
+    display: list-item;
+    margin: 2%;
+    line-height: 1.5;
+    font-size: 30px;
+  }
+
 </style>
