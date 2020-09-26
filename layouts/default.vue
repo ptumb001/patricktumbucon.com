@@ -21,11 +21,41 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu+Mono|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu+Mono|Ubuntu|Varela+Round');
+@import url(//db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
+
+@font-face {
+  font-family: 'Circular Std Medium';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/CircularStdMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Circular Std Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/CircularStdBold.ttf') format('truetype');
+}
+
+body {
+  background-color: #fffffe;
+}
 
 p, h1, h2, h3, h4, h5, a, ul, li {
-  font-family: 'Ubuntu', sans-serif;
   letter-spacing: 1px;
+}
+
+p, a, ul, li {
+  font-family: 'Circular Std Medium', sans-serif;
+  color: #1b2d45;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Circular Std Bold', sans-serif;
+  color: #00214d;
 }
 
 .container {

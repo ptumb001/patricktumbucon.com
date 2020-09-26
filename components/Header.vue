@@ -18,13 +18,24 @@ export default {
 <style>
 .grid-header {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+
+  font-size: 1.5em;
 }
 
-a {
-  padding-top: 5%;
+.grid-header > a {
+  padding-top: 10% !important;
   text-align: center;
   font-weight: 700;
   outline: 0;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) {
+    .grid-header {
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 1em;
+    }
+  }
 </style>

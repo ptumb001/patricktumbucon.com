@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="grid grid-hero">
-      <Animation /> 
+      <ProfileAnimation /> 
 
       <div class="col hero-content">
         <h1>Patrick Tumbucon</h1>
@@ -39,107 +39,14 @@
 </template>
 
 <script>
-import Animation from '@/components/Animation'
+import DotAnimation from '@/components/DotAnimation'
+import ProfileAnimation from '@/components/ProfileAnimation'
 import anime from 'animejs'
 
 export default {
   components: {
-    Animation
-  },
-  methods: {
-    toggleDisplay: function() {
-      this.$emit('toggleMode');
-      let currBackground = document.getElementsByTagName("body")[0].style.backgroundColor;
-      let toggleText = document.getElementById("toggle");
-      
-      // Currently light, turn dark
-      if (currBackground == "rgb(255, 255, 255)") {
-        // Background animation
-        anime({
-          targets: "body",
-          backgroundColor: "#000",
-          delay: 300,
-          duration: 1000,
-          easing: "easeOutQuart"
-        });
-
-        // Text animation
-        anime({
-          targets: "h1, h2, p, li>a>i",
-          color: "#fff",
-          delay: 300,
-          duration: 1000,
-          easing: "easeOutQuart"
-        });
-
-        // Squares animation
-        anime({
-          targets: ".square",
-          keyframes: [
-            {
-              skew: "20deg",
-              duration: 300, 
-            },
-            {
-              delay: anime.stagger(200, {
-                grid: [5, 5],
-                from: 'center'
-              }),
-              skew: "0",
-              scale: 0.75,
-              background: "linear-gradient(-45deg, rgba(24,102,239,1) 22%, rgba(49,255,147,1) 65%)",
-              duration: 1000,
-            }
-          ],
-          easing: "easeOutQuart"
-        });
-        toggleText.innerHTML = "Light mode?";
-      }
-
-      // Currently dark, turn light
-      else {
-        // Background animation
-        anime({
-          targets: "body",
-          background: "#fff",
-          delay: 300,
-          duration: 1000,
-          easing: "easeOutQuart"
-        });
-
-        // Text animation
-        anime({
-          targets: "h1, h2, p, li>a>i",
-          color: "#000",
-          delay: 300,
-          duration: 1000,
-          easing: "easeOutQuart"
-        });
-
-        // Squares animation
-        anime({
-          targets: ".square",
-          keyframes: [
-            {
-              skew: "-20deg",
-              duration: 300 
-            },
-            {
-              delay: anime.stagger(150, {
-                  grid: [5, 5],
-                  from: 'center'
-              }),
-              skew: "0",
-              scale: 0.75,
-              background: "linear-gradient(-45deg, rgba(250,116,47,1) 22%, rgba(255,51,125,1) 100%)",
-              duration: 1000
-            }
-          ],
-          easing: "easeOutQuart"
-        });
-        toggleText.innerHTML = "Dark mode?";
-      }
-    }
+    DotAnimation,
+    ProfileAnimation
   }
 }
 </script>
@@ -147,6 +54,7 @@ export default {
 <style>
 .grid-hero {
   grid-template-columns: 25% 75%;
+  grid-gap: 15%;
 }
 
 .grid-anim {
@@ -160,10 +68,6 @@ export default {
 
 .hero-content {
   padding-left: 5%;
-}
-
-a {
-  padding-top: 0;
 }
 
 ul.icon-list {
@@ -218,15 +122,16 @@ section {
 
 a {
   text-decoration: none;
-  color: #0475b1;
   transition-duration: 500ms;
+  padding-top: 0;
+  color: #ff5470;
+
 }
 
 a:hover {
   background: linear-gradient(-45deg,rgba(49,255,147,1) 25%, rgba(24,102,239,1) 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: underline;
 }
 
 h1 {
@@ -255,6 +160,10 @@ p {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   { 
+    .grid-hero {
+      grid-gap: 0;
+    }
+
     .container {
       padding: 0;
     }
