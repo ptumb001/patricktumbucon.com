@@ -28,7 +28,7 @@
             </a>
           </li>
           <li class="icon-list-item">
-            <a href="~assets/PatrickTumbuconResume.pdf">
+            <a href="PatrickTumbuconResume.pdf">
               <i class="far fa-file-alt"></i>
             </a>
           </li>
