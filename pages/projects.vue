@@ -33,20 +33,20 @@ export default {
           image: '/amplitude.gif',
           title: 'Amplitude',
           description: 'Browse through your Spotify recommendations with a clean interface. Save encountered songs to your Amplist.',
-          github: 'https://github.com/ptumb001/amplitude',
+          github: 'https://github.com/pattynextdoor/amplitude',
           devpost: 'https://devpost.com/software/amplitude'
         },
         {
           image: '/runner.gif',
           title: 'Runner',
           description: 'A hardware implementation of the popular browser game Cuberunner. Dodge falling objects at increasing speed.',
-          github: 'https://github.com/ptumb001/runner'
+          github: 'https://github.com/pattynextdoor/runner'
         },
         {
           image: '/locus.png',
           title: 'Locus',
           description: 'Find your perfect neighborhood by utilizing location analytics, points of interest, and area indices.',
-          github: 'https://github.com/ptumb001/locus',
+          github: 'https://github.com/pattynextdoor/locus',
           devpost: 'https://devpost.com/software/locus-7gm5wd'
         },
         {
@@ -60,7 +60,7 @@ export default {
           image: '/sweetnectarvalley.png',
           title: 'Sweet Nectar Valley',
           description: 'A virtual reality experience inspired by Stardew Valley. Chop down trees, plant crops, and interact with your farm animals.',
-          github: 'https://github.com/ptumb001/sweet-nectar-valley'
+          github: 'https://github.com/pattynextdoor/sweet-nectar-valley'
         }
       ]
     }

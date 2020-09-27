@@ -8,7 +8,7 @@
         <p class="subtitle">Software Developer, Petter of Shibas</p>
         <ul class="icon-list">
           <li class="icon-list-item">
-            <a href="https://github.com/ptumb001">
+            <a href="https://github.com/pattynextdoor">
               <i class="fab fa-github"></i>
             </a>
           </li>

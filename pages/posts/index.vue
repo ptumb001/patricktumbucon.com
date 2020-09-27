@@ -1,9 +1,10 @@
 <template>
     <div class="my-posts">
-        <h1>My Posts</h1>
+        <h1>Recent Posts</h1>
         <ul>
-            <li v-for="post in posts" :key="post.attributes.title">
-                <nuxt-link :to="post.attributes.permalink">{{ post.attributes.title }}</nuxt-link>
+            <li v-for="post in posts.sort((a, b) => parseInt(b.attributes.epoch) - parseInt(a.attributes.epoch))" :key="post.attributes.title">
+                <p>{{post.attributes.date}} - 
+                  <nuxt-link :to="post.attributes.permalink">{{ post.attributes.title }}</nuxt-link></p>
             </li>
         </ul>
 
@@ -34,11 +35,13 @@
     margin-top: 5%;
   }
 
-  li {
+  p {
     display: list-item;
     margin: 2%;
+    margin-left: 0;
     line-height: 1.5;
-    font-size: 30px;
+    font-size: 18px;
+    list-style: none;
   }
 
 </style>

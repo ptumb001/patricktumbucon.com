@@ -36,6 +36,7 @@
   .blog-post {
     padding: 0 25%;
     margin: 0 auto;
+    padding-bottom: 5%;
   }
 
   .post-title {
@@ -44,6 +45,7 @@
 
   .post-date {
     color: #6a737d;
+    font-style: italic;
   }
 
   .content >>> h1 {
@@ -67,7 +69,7 @@
   }
 
   .content >>> ul {
-    list-style-type: '- ';
+    list-style-type: disc;
   }
 
   .content >>> li {
