@@ -50,7 +50,8 @@ module.exports = {
   generate: {
     routes: [
       '/posts/markdown-blog',
-      '/posts/v60-pourover'
+      '/posts/v60-pourover',
+      '/posts/uses'
     ]
   },
 
