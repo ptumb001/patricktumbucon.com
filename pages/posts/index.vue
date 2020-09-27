@@ -2,7 +2,7 @@
     <div class="my-posts">
         <h1>Recent Posts</h1>
         <ul>
-            <li v-for="post in posts.sort((a, b) => parseInt(b.attributes.epoch) - parseInt(a.attributes.epoch))" :key="post.attributes.title">
+            <li v-for="post in posts" :key="post.attributes.title">
                 <p>{{post.attributes.date}} - 
                   <nuxt-link :to="post.attributes.permalink">{{ post.attributes.title }}</nuxt-link></p>
             </li>
@@ -20,7 +20,7 @@
         return resolve(key);
       });
       return {
-        posts: imports
+        posts: imports.sort((a, b) => parseInt(b.attributes.epoch) - parseInt(a.attributes.epoch))
       }
     },
     mounted() {
