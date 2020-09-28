@@ -1,5 +1,7 @@
 ---
 title: Uses
+description: These are the peripherals, machines, bytes and living things that I interact with.
+image: https://i.ibb.co/yYxs6pz/Processed-with-VSCO-with-kp9-preset.jpg
 date: September 26, 2020
 epoch: 1601127468
 permalink: /posts/uses

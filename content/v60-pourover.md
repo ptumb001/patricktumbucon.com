@@ -1,6 +1,8 @@
 ---
 title: V60 Pourover - My Favorite Way to Brew Coffee
 date: December 13, 2019
+description: The V60 rewards your constant attention-to-detail with an amazing cup of coffee.
+image: https://media.prima-coffee.com/25104-39723/cms/39723/files/edc09a3f-8671-43fe-a8ea-5084f31e5d50?_mzcb=_1575868482739
 epoch: 1576247868
 permalink: /posts/v60-pourover
 ---

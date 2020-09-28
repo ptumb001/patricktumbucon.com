@@ -1,6 +1,8 @@
 ---
 title: Adding Support for Markdown-style Blog Posts in a Nuxt.js project
 date: December 8, 2019
+description: I've always thought about starting a blog about dumb stuff I want to write about to a vague audience.
+image: \#
 epoch: 1575815868
 permalink: /posts/markdown-blog
 ---

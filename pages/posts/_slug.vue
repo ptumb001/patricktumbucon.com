@@ -14,6 +14,19 @@
   import Prism from '~/plugins/prism'
 
   export default {
+    head() {
+      let post = this.post
+      return {
+        title: post.attributes.title,
+        meta: [
+          { name: 'og:type', content: 'article' },
+          { name: 'og:title', content: post.attributes.title},
+          { name: 'og:description', content: post.attributes.description},
+          { name: 'og:image', content: post.attributes.image},
+          { name: 'twitter:creator', content: 'patrickisd3ad'},
+        ]
+      }
+    },
     async asyncData({ params }) {
       try {
         let post = await import(`~/content/${params.slug}.md`);
