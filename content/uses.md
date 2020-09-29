@@ -13,7 +13,7 @@ These are the peripherals, machines, bytes and living things that I interact wit
 
 <img src="https://i.ibb.co/yYxs6pz/Processed-with-VSCO-with-kp9-preset.jpg"
      alt="My workstation"
-     width="75%">
+     width="100%">
 
 - While technically also my *play*station, my [custom PC build](https://pcpartpicker.com/list/yDq3Pn) is also a great developer machine, though I do prefer Mac for work. While I've been playing video games for as long as I can remember, I never had anything remotely close to a gaming computer until I could afford to build a decent one myself (May 2020). This thing rips through 1440p, 144hz gameplay incredibly smoothly.
 
@@ -38,7 +38,7 @@ These are the peripherals, machines, bytes and living things that I interact wit
 
 <img src="https://i.ibb.co/jLLWLBs/Screenshot-2020-09-27-120032.png" 
      alt="My editor setup"
-     width="75%">
+     width="100%">
 
 - [Visual Studio Code](https://code.visualstudio.com/) - I used Atom as my first serious editor, but the community support and lightweight feel of VS Code is unparalleled. 
 - The key bindings for [Vim](https://github.com/VSCodeVim/Vim) - I just can't *not* use Vim bindings in a development environment anymore. Whether I'm on my home editor with an emulator plugin or ssh'd to a Linux server, Vim is there for me. The learning curve is steep, but you soon learn how to navigate with your cursor. Then you have *delete a line* and *record and repeat a macro* ingrained in your muscle memory. It's a very rewarding way to edit files, to say the least. Train your Vim skills, it will pay off!
