@@ -44,6 +44,17 @@ import ProfileAnimation from '@/components/ProfileAnimation'
 import anime from 'animejs'
 
 export default {
+  head() {
+    return {
+      title: 'Patrick Tumbucon',
+      meta: [
+        { name: 'og:title', content: 'Patrick Tumbucon'},
+        { name: 'og:description', content: 'Patrick\'s personal website!'},
+        { name: 'og:image', content: 'https://i.ibb.co/fGBvqS8/7762-F104-5889-4-A1-B-A30-C-995-B7-B554-CD0.png'},
+        { name: 'twitter:creator', content: 'patrickisd3ad'},
+      ]
+    }
+  }
   components: {
     DotAnimation,
     ProfileAnimation
