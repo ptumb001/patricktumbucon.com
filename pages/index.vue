@@ -54,7 +54,7 @@ export default {
         { name: 'twitter:creator', content: 'patrickisd3ad'},
       ]
     }
-  }
+  },
   components: {
     DotAnimation,
     ProfileAnimation
