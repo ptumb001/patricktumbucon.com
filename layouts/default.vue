@@ -1,22 +1,28 @@
 <template>
   <div>
-    <Header />
-    <nuxt v-on:toggleMode="this.darkMode=!this.darkMode"
-          v-on:darkMode="this.darkMode"/>
+    <Header @mouseover.native = "hover = true"
+            @mouseleave.native = "hover = false"/>
+    <nuxt />
+    <transition name="fade">
+      <MainAnimation v-show="hover"/>
+    </transition>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
+import MainAnimation from '~/components/MainAnimation'
 
 export default {
   components: {
-    Header
+    Header,
+    MainAnimation
   },
-  data: function() {
+  data() {
     return {
+      hover: false
     }
-  }
+  },
 }
 </script>
 
@@ -84,6 +90,13 @@ p {
 
 .dark-bg {
   background-color: #222;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 </style>

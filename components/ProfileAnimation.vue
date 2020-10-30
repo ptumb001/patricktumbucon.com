@@ -34,7 +34,7 @@ export default {
             delay: 600
           }
         ],
-        easing: 'easeInOutQuint',
+        easing: 'linear',
         duration: 3000,
         delay: 400,
         direction: 'alternate',
