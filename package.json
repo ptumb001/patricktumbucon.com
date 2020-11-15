@@ -1,7 +1,7 @@
 {
   "name": "nuxt-personal-2",
   "version": "1.0.0",
-  "description": "Patrick's personal website!",
+  "description": "My scrumtrulescent Nuxt.js project",
   "author": "Patrick Tumbucon",
   "private": true,
   "scripts": {
@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.4",
-    "animejs": "^3.2.1",
+    "animejs": "^3.1.0",
     "cross-env": "^5.2.1",
-    "frontmatter-markdown-loader": "^3.6.1",
-    "nuxt": "^2.14.7",
-    "prismjs": "^1.22.0",
+    "frontmatter-markdown-loader": "^3.1.0",
+    "nuxt": "^2.10.2",
+    "prismjs": "^1.17.1",
     "tilt.js": "^1.2.1",
     "vanilla-tilt": "^1.7.0"
   },
