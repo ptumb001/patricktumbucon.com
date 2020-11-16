@@ -5,7 +5,7 @@
 
       <div class="col hero-content">
         <h1>Patrick Tumbucon</h1>
-        <p class="subtitle">Software Developer, Petter of Shibas</p>
+        <p class="subtitle">Software Developer, Shiba Inu Enthusiast</p>
         <ul class="icon-list">
           <li class="icon-list-item">
             <a href="https://github.com/pattynextdoor">
