@@ -19,11 +19,10 @@
     <section>
       <h2>What I do in my free time</h2>
       <p>
-        I enjoy relaxing at coffee shops, climbing rocks, playing strategy games (and Smash Bros), and attending music festivals.
+        Back when we were able to go outside, I enjoyed relaxing at coffee shops, climbing rocks,  and attending music festivals.
       </p>
       <p>
-        If you'd like to schedule a meeting with me (whether virtual or in-person), feel free to do so 
-        <a href="https://www.meetingbird.com/m/BJqmXcBmQ">here</a>.
+        Nowadays, you can find me at home <a href="https://patricktumbucon.com/posts/v60-pourover">making my own coffee</a>, tending to my 16+ houseplants, attempting to bake, playing video games with friends on Discord, and <a href="https://www.tiktok.com/@kimmykn/video/6901901222337449222?lang=en">obsessively staring at my saltwater nano reef tank.</a>
       </p>
     </section>
 

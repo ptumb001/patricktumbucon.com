@@ -3,6 +3,7 @@
     <nuxt-link to="/">Home</nuxt-link>
     <nuxt-link to="/about">About</nuxt-link>
     <nuxt-link to="/projects">Projects</nuxt-link>
+    <nuxt-link to="/lists">Lists</nuxt-link>
     <nuxt-link to="/posts">Posts</nuxt-link>
   </div>
 </template>
@@ -19,7 +20,6 @@ export default {
 .grid-header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   font-size: 1.5em;
 }
 
