@@ -30,6 +30,12 @@ export default {
     return {
       projects: [
         {
+          image: '/okizeme.png',
+          title: 'Okizeme',
+          description: 'High level fighting game content. I\'m working with friends to release written content based around fighting games, streaming, and more!',
+          github: 'https://github.com/pattynextdoor/okizeme-app'
+        },
+        {
           image: '/amplitude.gif',
           title: 'Amplitude',
           description: 'Browse through your Spotify recommendations with a clean interface. Save encountered songs to your Amplist.',
